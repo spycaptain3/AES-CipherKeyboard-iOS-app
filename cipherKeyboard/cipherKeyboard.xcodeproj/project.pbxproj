@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C0AEBDA29E040E100439601 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0AEBD929E040E100439601 /* MainPageViewController.swift */; };
+		4C0AEBDC29E0411E00439601 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0AEBDB29E0411E00439601 /* AnswerViewController.swift */; };
+		4C0AEBDE29E04A3400439601 /* InstallKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0AEBDD29E04A3400439601 /* InstallKeyboardViewController.swift */; };
+		4C0AEBE029E04A9700439601 /* AboutCipherTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0AEBDF29E04A9700439601 /* AboutCipherTextViewController.swift */; };
+		4C5FF3FA29DFEBDF0055CB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FF3F929DFEBDF0055CB45 /* AppDelegate.swift */; };
+		4C5FF3FC29DFEBDF0055CB45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FF3FB29DFEBDF0055CB45 /* SceneDelegate.swift */; };
+		4C5FF3FE29DFEBDF0055CB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FF3FD29DFEBDF0055CB45 /* ViewController.swift */; };
+		4C5FF40129DFEBDF0055CB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5FF3FF29DFEBDF0055CB45 /* Main.storyboard */; };
+		4C5FF40329DFEBE10055CB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5FF40229DFEBE10055CB45 /* Assets.xcassets */; };
+		4C5FF40629DFEBE10055CB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5FF40429DFEBE10055CB45 /* LaunchScreen.storyboard */; };
+		4CD133EE29E22B8900854351 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4CD133ED29E22B8900854351 /* CryptoSwift */; };
+		F8BFC3DE0C43E5CDF67AEA63 /* Pods_cipherKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF7D76DABC1E36346EBBB22 /* Pods_cipherKeyboard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AF7D76DABC1E36346EBBB22 /* Pods_cipherKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cipherKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0AEBD929E040E100439601 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		4C0AEBDB29E0411E00439601 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		4C0AEBDD29E04A3400439601 /* InstallKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallKeyboardViewController.swift; sourceTree = "<group>"; };
+		4C0AEBDF29E04A9700439601 /* AboutCipherTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCipherTextViewController.swift; sourceTree = "<group>"; };
+		4C5FF3F629DFEBDF0055CB45 /* cipherKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cipherKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5FF3F929DFEBDF0055CB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C5FF3FB29DFEBDF0055CB45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C5FF3FD29DFEBDF0055CB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C5FF40029DFEBDF0055CB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C5FF40229DFEBE10055CB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C5FF40529DFEBE10055CB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C5FF40729DFEBE10055CB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538C1C2C022EE6511971DE5C /* Pods-cipherKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cipherKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-cipherKeyboard/Pods-cipherKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		E58B0A5FB2344B5E22D58F2B /* Pods-cipherKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cipherKeyboard.release.xcconfig"; path = "Target Support Files/Pods-cipherKeyboard/Pods-cipherKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5FF3F329DFEBDF0055CB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BFC3DE0C43E5CDF67AEA63 /* Pods_cipherKeyboard.framework in Frameworks */,
+				4CD133EE29E22B8900854351 /* CryptoSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16B6CA7759FE0FD157D66EB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				538C1C2C022EE6511971DE5C /* Pods-cipherKeyboard.debug.xcconfig */,
+				E58B0A5FB2344B5E22D58F2B /* Pods-cipherKeyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C5FF3ED29DFEBDF0055CB45 = {
+			isa = PBXGroup;
+			children = (
+				4C5FF3F829DFEBDF0055CB45 /* cipherKeyboard */,
+				4C5FF3F729DFEBDF0055CB45 /* Products */,
+				16B6CA7759FE0FD157D66EB5 /* Pods */,
+				5ED7867A8028FF4880CD9DBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5FF3F729DFEBDF0055CB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5FF3F629DFEBDF0055CB45 /* cipherKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5FF3F829DFEBDF0055CB45 /* cipherKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4C5FF3F929DFEBDF0055CB45 /* AppDelegate.swift */,
+				4C5FF3FB29DFEBDF0055CB45 /* SceneDelegate.swift */,
+				4C5FF3FD29DFEBDF0055CB45 /* ViewController.swift */,
+				4C5FF3FF29DFEBDF0055CB45 /* Main.storyboard */,
+				4C0AEBDF29E04A9700439601 /* AboutCipherTextViewController.swift */,
+				4C0AEBDD29E04A3400439601 /* InstallKeyboardViewController.swift */,
+				4C0AEBDB29E0411E00439601 /* AnswerViewController.swift */,
+				4C0AEBD929E040E100439601 /* MainPageViewController.swift */,
+				4C5FF40229DFEBE10055CB45 /* Assets.xcassets */,
+				4C5FF40429DFEBE10055CB45 /* LaunchScreen.storyboard */,
+				4C5FF40729DFEBE10055CB45 /* Info.plist */,
+			);
+			path = cipherKeyboard;
+			sourceTree = "<group>";
+		};
+		5ED7867A8028FF4880CD9DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AF7D76DABC1E36346EBBB22 /* Pods_cipherKeyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5FF3F529DFEBDF0055CB45 /* cipherKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5FF40A29DFEBE10055CB45 /* Build configuration list for PBXNativeTarget "cipherKeyboard" */;
+			buildPhases = (
+				1660D7CE0C8C0EEB9DAC1436 /* [CP] Check Pods Manifest.lock */,
+				4C5FF3F229DFEBDF0055CB45 /* Sources */,
+				4C5FF3F329DFEBDF0055CB45 /* Frameworks */,
+				4C5FF3F429DFEBDF0055CB45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cipherKeyboard;
+			packageProductDependencies = (
+				4CD133ED29E22B8900854351 /* CryptoSwift */,
+			);
+			productName = cipherKeyboard;
+			productReference = 4C5FF3F629DFEBDF0055CB45 /* cipherKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5FF3EE29DFEBDF0055CB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4C5FF3F529DFEBDF0055CB45 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C5FF3F129DFEBDF0055CB45 /* Build configuration list for PBXProject "cipherKeyboard" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C5FF3ED29DFEBDF0055CB45;
+			packageReferences = (
+				4CD133EC29E22B8900854351 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+			);
+			productRefGroup = 4C5FF3F729DFEBDF0055CB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5FF3F529DFEBDF0055CB45 /* cipherKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C5FF3F429DFEBDF0055CB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5FF40629DFEBE10055CB45 /* LaunchScreen.storyboard in Resources */,
+				4C5FF40329DFEBE10055CB45 /* Assets.xcassets in Resources */,
+				4C5FF40129DFEBDF0055CB45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1660D7CE0C8C0EEB9DAC1436 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cipherKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5FF3F229DFEBDF0055CB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0AEBDA29E040E100439601 /* MainPageViewController.swift in Sources */,
+				4C5FF3FE29DFEBDF0055CB45 /* ViewController.swift in Sources */,
+				4C0AEBDC29E0411E00439601 /* AnswerViewController.swift in Sources */,
+				4C0AEBDE29E04A3400439601 /* InstallKeyboardViewController.swift in Sources */,
+				4C5FF3FA29DFEBDF0055CB45 /* AppDelegate.swift in Sources */,
+				4C0AEBE029E04A9700439601 /* AboutCipherTextViewController.swift in Sources */,
+				4C5FF3FC29DFEBDF0055CB45 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C5FF3FF29DFEBDF0055CB45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5FF40029DFEBDF0055CB45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C5FF40429DFEBE10055CB45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5FF40529DFEBE10055CB45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C5FF40829DFEBE10055CB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C5FF40929DFEBE10055CB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C5FF40B29DFEBE10055CB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538C1C2C022EE6511971DE5C /* Pods-cipherKeyboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cipherKeyboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spycaptain.cipherKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C5FF40C29DFEBE10055CB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E58B0A5FB2344B5E22D58F2B /* Pods-cipherKeyboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cipherKeyboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spycaptain.cipherKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5FF3F129DFEBDF0055CB45 /* Build configuration list for PBXProject "cipherKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5FF40829DFEBE10055CB45 /* Debug */,
+				4C5FF40929DFEBE10055CB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5FF40A29DFEBE10055CB45 /* Build configuration list for PBXNativeTarget "cipherKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5FF40B29DFEBE10055CB45 /* Debug */,
+				4C5FF40C29DFEBE10055CB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4CD133EC29E22B8900854351 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4CD133ED29E22B8900854351 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CD133EC29E22B8900854351 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4C5FF3EE29DFEBDF0055CB45 /* Project object */;
+}

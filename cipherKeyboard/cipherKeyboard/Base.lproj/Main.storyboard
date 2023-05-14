@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="04q-eE-Eh5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cipherKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockImage" translatesAutoresizingMaskIntoConstraints="NO" id="0Fd-rp-GfC">
+                                <rect key="frame" x="22" y="250" width="337" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="NO2-Pl-gjv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advance Encryption Standard (AES)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbV-ic-1xv">
+                                <rect key="frame" x="20" y="426" width="374" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="W7B-pN-ieq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="33"/>
+                                <color key="textColor" red="0.35294118520000001" green="0.77647060160000003" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CIPHER-TEXT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Io-oP-Gxj">
+                                <rect key="frame" x="62" y="510" width="297" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="kPa-8u-G24"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="36"/>
+                                <color key="textColor" systemColor="systemGray5Color"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.35294118520000001" green="0.77647060160000003" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="1" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBp-3V-fa1">
+                                <rect key="frame" x="143" y="668" width="135" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Next"/>
+                                <connections>
+                                    <action selector="NextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKq-ST-efe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="XbV-ic-1xv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7ju-ZS-J1Y"/>
+                            <constraint firstItem="5Io-oP-Gxj" firstAttribute="centerX" secondItem="sBp-3V-fa1" secondAttribute="centerX" id="E3v-um-F1J"/>
+                            <constraint firstItem="0Fd-rp-GfC" firstAttribute="trailing" secondItem="5Io-oP-Gxj" secondAttribute="trailing" id="Gmk-nQ-NGf"/>
+                            <constraint firstItem="5Io-oP-Gxj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="URQ-JK-ULM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBp-3V-fa1" secondAttribute="bottom" constant="163" id="Vaf-rz-y7g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Fd-rp-GfC" secondAttribute="trailing" constant="55" id="YBb-x4-6YE"/>
+                            <constraint firstItem="XbV-ic-1xv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YsL-vm-AZr"/>
+                            <constraint firstItem="0Fd-rp-GfC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="bHs-pA-xhA"/>
+                            <constraint firstItem="sBp-3V-fa1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="kdm-v0-AdA"/>
+                            <constraint firstItem="XbV-ic-1xv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="338" id="tPv-k1-vTF"/>
+                            <constraint firstItem="0Fd-rp-GfC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="162" id="wt9-sn-njL"/>
+                            <constraint firstItem="5Io-oP-Gxj" firstAttribute="top" secondItem="0Fd-rp-GfC" secondAttribute="bottom" constant="25" id="x79-r6-lFV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ItR-l2-Ykd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="69.642857142857139"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="ygY-2c-VfK">
+            <objects>
+                <viewController storyboardIdentifier="MainPageViewController" id="uas-S9-rAQ" customClass="MainPageViewController" customModule="cipherKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jlf-ZV-RXB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9c-US-xta">
+                                <rect key="frame" x="217" y="597" width="166" height="50"/>
+                                <color key="tintColor" red="0.35686278339999999" green="0.77647060160000003" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Decrypt Text">
+                                    <color key="baseBackgroundColor" red="0.40000003579999999" green="0.80392158030000005" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="DecryptTextButton:" destination="uas-S9-rAQ" eventType="touchUpInside" id="6gD-FZ-rbY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Text 📝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gT-lk-EzK">
+                                <rect key="frame" x="20" y="104" width="353" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Mwu-7l-Ip3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXv-EV-7Ax">
+                                <rect key="frame" x="0.0" y="756" width="419" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ay3-ay-vJ3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Cipher KeyBoard extension install" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="GotoInstallPage:" destination="uas-S9-rAQ" eventType="touchUpInside" id="QTb-Gs-VRb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngw-0r-poB">
+                                <rect key="frame" x="0.0" y="799" width="419" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="a9h-sw-oKN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="About Cipher Keyboard" cornerStyle="large"/>
+                                <connections>
+                                    <action selector="GotoAboutCipher:" destination="uas-S9-rAQ" eventType="touchUpInside" id="NnG-Gq-2vB"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" text="For Encryption -&gt; Hello!                                                   For Decryption -&gt; &quot;12,23,44,54&quot;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vfx-ET-NMJ">
+                                <rect key="frame" x="20" y="158" width="374" height="291"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="291" id="y4e-Kn-GEd"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06O-4l-xnW">
+                                <rect key="frame" x="20" y="597" width="166" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="yj9-IX-rX2"/>
+                                </constraints>
+                                <color key="tintColor" red="0.35686278339999999" green="0.77647060160000003" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Encrypt Text">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.40000003579999999" green="0.80392158030000005" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="EncryptTextButton:" destination="uas-S9-rAQ" eventType="touchUpInside" id="bKa-f1-TPx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text-Lock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvZ-lW-MLP">
+                                <rect key="frame" x="0.0" y="38" width="414" height="58"/>
+                                <color key="backgroundColor" red="0.13789577628979591" green="0.31131263533061221" blue="0.39968331955374153" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="KV6-aA-ZfB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Key 🔑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOg-DC-Pws">
+                                <rect key="frame" x="22" y="457" width="353" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Phz-8j-vb1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" red="0.40000003579999999" green="0.80392158030000005" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your 6-digit Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBR-EX-LUg">
+                                <rect key="frame" x="20" y="503" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EHz-g8-h71"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Vfx-ET-NMJ" firstAttribute="leading" secondItem="xBR-EX-LUg" secondAttribute="leading" id="0eV-sh-Ex5"/>
+                            <constraint firstItem="Vfx-ET-NMJ" firstAttribute="trailing" secondItem="jlf-ZV-RXB" secondAttribute="trailingMargin" id="1cy-pX-Hvp"/>
+                            <constraint firstItem="xBR-EX-LUg" firstAttribute="leading" secondItem="06O-4l-xnW" secondAttribute="leading" id="1ko-8o-ch0"/>
+                            <constraint firstItem="bvZ-lW-MLP" firstAttribute="top" secondItem="jlf-ZV-RXB" secondAttribute="topMargin" constant="-50" id="2Nf-EU-xQt"/>
+                            <constraint firstItem="bvZ-lW-MLP" firstAttribute="centerX" secondItem="Vfx-ET-NMJ" secondAttribute="centerX" id="5dO-XG-Fiw"/>
+                            <constraint firstItem="EHz-g8-h71" firstAttribute="trailing" secondItem="VOg-DC-Pws" secondAttribute="trailing" constant="39" id="619-Db-zK5"/>
+                            <constraint firstItem="VOg-DC-Pws" firstAttribute="leading" secondItem="EHz-g8-h71" secondAttribute="leading" constant="22" id="BSi-VB-EKz"/>
+                            <constraint firstItem="RXv-EV-7Ax" firstAttribute="trailing" secondItem="ngw-0r-poB" secondAttribute="trailing" id="Bvy-Ai-Qp9"/>
+                            <constraint firstItem="6gT-lk-EzK" firstAttribute="trailing" secondItem="xBR-EX-LUg" secondAttribute="trailing" id="DOo-kA-sNd"/>
+                            <constraint firstItem="RXv-EV-7Ax" firstAttribute="leading" secondItem="EHz-g8-h71" secondAttribute="leading" id="Nfb-Yf-KEy"/>
+                            <constraint firstItem="bvZ-lW-MLP" firstAttribute="leading" secondItem="RXv-EV-7Ax" secondAttribute="leading" id="Q91-Qk-D1d"/>
+                            <constraint firstItem="EHz-g8-h71" firstAttribute="bottom" secondItem="ngw-0r-poB" secondAttribute="bottom" constant="28" id="UiW-zE-3Ky"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RXv-EV-7Ax" secondAttribute="trailing" constant="-25" id="WoA-bj-6GC"/>
+                            <constraint firstItem="VOg-DC-Pws" firstAttribute="top" secondItem="Vfx-ET-NMJ" secondAttribute="bottom" constant="8" id="XzK-ST-Cd2"/>
+                            <constraint firstItem="xBR-EX-LUg" firstAttribute="top" secondItem="VOg-DC-Pws" secondAttribute="bottom" constant="8" id="YIQ-Th-2b5"/>
+                            <constraint firstItem="Vfx-ET-NMJ" firstAttribute="top" secondItem="6gT-lk-EzK" secondAttribute="bottom" constant="8" id="ZZA-pn-Sja"/>
+                            <constraint firstItem="EHz-g8-h71" firstAttribute="trailing" secondItem="R9c-US-xta" secondAttribute="trailing" constant="31" id="cJ6-09-UME"/>
+                            <constraint firstItem="ngw-0r-poB" firstAttribute="top" secondItem="RXv-EV-7Ax" secondAttribute="bottom" constant="8" id="csQ-ks-lIc"/>
+                            <constraint firstItem="06O-4l-xnW" firstAttribute="top" secondItem="xBR-EX-LUg" secondAttribute="bottom" constant="60" id="d34-k5-PCa"/>
+                            <constraint firstItem="6gT-lk-EzK" firstAttribute="leading" secondItem="Vfx-ET-NMJ" secondAttribute="leading" id="eP5-dp-Jeq"/>
+                            <constraint firstItem="R9c-US-xta" firstAttribute="leading" secondItem="06O-4l-xnW" secondAttribute="trailing" constant="31" id="fxe-m7-bLU"/>
+                            <constraint firstItem="06O-4l-xnW" firstAttribute="baseline" secondItem="R9c-US-xta" secondAttribute="baseline" id="gtg-VQ-PaM"/>
+                            <constraint firstItem="RXv-EV-7Ax" firstAttribute="leading" secondItem="ngw-0r-poB" secondAttribute="leading" id="iu4-7b-7Kv"/>
+                            <constraint firstItem="6gT-lk-EzK" firstAttribute="leading" secondItem="jlf-ZV-RXB" secondAttribute="leadingMargin" id="phz-Ug-3rn"/>
+                            <constraint firstItem="6gT-lk-EzK" firstAttribute="top" secondItem="bvZ-lW-MLP" secondAttribute="bottom" constant="8" id="t7K-wM-wWI"/>
+                            <constraint firstItem="EHz-g8-h71" firstAttribute="trailing" secondItem="6gT-lk-EzK" secondAttribute="trailing" constant="41" id="wpy-Wo-1zB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="t82-3V-Klh"/>
+                    <connections>
+                        <outlet property="HomeKey" destination="xBR-EX-LUg" id="2s0-mb-fJq"/>
+                        <outlet property="HomeText" destination="Vfx-ET-NMJ" id="MXe-1X-3vk"/>
+                        <segue destination="svg-u3-yYM" kind="show" identifier="gotoInstall" id="vW8-6O-fPV"/>
+                        <segue destination="wJr-d7-zmg" kind="show" identifier="gotoAboutCipher" id="Uyz-Gi-Wa9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3i-xO-OCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702.898550724638" y="59.598214285714285"/>
+        </scene>
+        <!--Answer View Controller-->
+        <scene sceneID="tsy-zC-Mqg">
+            <objects>
+                <viewController storyboardIdentifier="AnswerViewController" id="flb-hS-Eq9" customClass="AnswerViewController" customModule="cipherKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TD8-HF-VPK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ws-5N-7hz">
+                                <rect key="frame" x="0.0" y="756" width="419" height="35"/>
+                                <color key="backgroundColor" red="0.87450981139999995" green="0.87450981139999995" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IEC-NI-p5h"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Cipher KeyBoard extension install"/>
+                                <connections>
+                                    <action selector="InstallKeyboardButton:" destination="flb-hS-Eq9" eventType="touchUpInside" id="dFS-ru-thy"/>
+                                    <segue destination="svg-u3-yYM" kind="show" id="9O7-7y-ILJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-QN-bgP">
+                                <rect key="frame" x="0.0" y="799" width="419" height="35"/>
+                                <color key="backgroundColor" red="0.87450981139999995" green="0.87450981139999995" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EZR-yg-UJC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="About Cipher Keyboard"/>
+                                <connections>
+                                    <action selector="AboutCipherKeyboardButton:" destination="flb-hS-Eq9" eventType="touchUpInside" id="XLV-Jq-3W6"/>
+                                    <segue destination="wJr-d7-zmg" kind="show" id="L6M-ha-wtx"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EncDecImage" translatesAutoresizingMaskIntoConstraints="NO" id="dix-xZ-6l6">
+                                <rect key="frame" x="20" y="498" width="376" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Cbh-qD-qx6"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fFS-hJ-fe0">
+                                <rect key="frame" x="21" y="126" width="376" height="337"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enrypted/Decrypted Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1o-N1-gPq">
+                                <rect key="frame" x="23" y="82" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Hrl-9h-DOc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <color key="textColor" red="0.38823530080000002" green="0.76862752440000004" blue="0.90196073060000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgH-dH-7Om">
+                                <rect key="frame" x="308" y="459" width="89" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="speaker.wave.2.fill" catalog="system" title="Speak"/>
+                                <connections>
+                                    <action selector="textSpeak:" destination="flb-hS-Eq9" eventType="touchUpInside" id="2OK-Rz-rkl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kep-59-20d"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fFS-hJ-fe0" firstAttribute="leading" secondItem="Kep-59-20d" secondAttribute="leading" constant="21" id="0ab-Wk-jgQ"/>
+                            <constraint firstItem="wgH-dH-7Om" firstAttribute="trailing" secondItem="fFS-hJ-fe0" secondAttribute="trailing" id="9Lw-mV-biv"/>
+                            <constraint firstItem="0Ws-5N-7hz" firstAttribute="trailing" secondItem="T8L-QN-bgP" secondAttribute="trailing" id="Bzj-ny-8XP"/>
+                            <constraint firstItem="fFS-hJ-fe0" firstAttribute="top" secondItem="v1o-N1-gPq" secondAttribute="bottom" constant="8" id="Gy7-ht-cKr"/>
+                            <constraint firstItem="Kep-59-20d" firstAttribute="trailing" secondItem="dix-xZ-6l6" secondAttribute="trailing" constant="18" id="IZ6-vb-g89"/>
+                            <constraint firstItem="dix-xZ-6l6" firstAttribute="top" secondItem="wgH-dH-7Om" secondAttribute="bottom" constant="8" id="LWw-X5-QHB"/>
+                            <constraint firstItem="0Ws-5N-7hz" firstAttribute="leading" secondItem="T8L-QN-bgP" secondAttribute="leading" id="W7d-vt-b2d"/>
+                            <constraint firstItem="v1o-N1-gPq" firstAttribute="trailing" secondItem="fFS-hJ-fe0" secondAttribute="trailing" id="ba2-Gl-pYL"/>
+                            <constraint firstItem="dix-xZ-6l6" firstAttribute="leading" secondItem="TD8-HF-VPK" secondAttribute="leadingMargin" id="e4v-Zj-7ef"/>
+                            <constraint firstItem="v1o-N1-gPq" firstAttribute="centerX" secondItem="0Ws-5N-7hz" secondAttribute="centerX" id="eX3-NR-r29"/>
+                            <constraint firstItem="v1o-N1-gPq" firstAttribute="top" secondItem="Kep-59-20d" secondAttribute="top" constant="38" id="fiq-hm-hgQ"/>
+                            <constraint firstItem="fFS-hJ-fe0" firstAttribute="centerX" secondItem="0Ws-5N-7hz" secondAttribute="centerX" id="kJl-nI-wLg"/>
+                            <constraint firstItem="Kep-59-20d" firstAttribute="bottom" secondItem="T8L-QN-bgP" secondAttribute="bottom" constant="28" id="ljE-FE-dkG"/>
+                            <constraint firstItem="0Ws-5N-7hz" firstAttribute="top" secondItem="dix-xZ-6l6" secondAttribute="bottom" constant="88" id="mge-x8-T2U"/>
+                            <constraint firstItem="0Ws-5N-7hz" firstAttribute="leading" secondItem="Kep-59-20d" secondAttribute="leading" id="nBV-ba-KMy"/>
+                            <constraint firstItem="dix-xZ-6l6" firstAttribute="top" secondItem="fFS-hJ-fe0" secondAttribute="bottom" constant="35" id="pXD-4P-rkJ"/>
+                            <constraint firstItem="T8L-QN-bgP" firstAttribute="top" secondItem="0Ws-5N-7hz" secondAttribute="bottom" constant="8" id="qfC-d4-O9o"/>
+                            <constraint firstItem="Kep-59-20d" firstAttribute="trailing" secondItem="v1o-N1-gPq" secondAttribute="trailing" constant="17" id="zDp-G2-MZz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bt5-cR-75d"/>
+                    <connections>
+                        <outlet property="AnswerText" destination="fFS-hJ-fe0" id="SvV-kr-eqM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mei-iU-L4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3800.0000000000005" y="-625.44642857142856"/>
+        </scene>
+        <!--About Cipher Text View Controller-->
+        <scene sceneID="Twv-DZ-IHI">
+            <objects>
+                <viewController id="wJr-d7-zmg" customClass="AboutCipherTextViewController" customModule="cipherKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="s8m-Oq-8Us">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yed-DA-wF3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipz-1v-KvX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text Lock (Cipher Keyboard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLJ-dS-tGX">
+                                                <rect key="frame" x="21" y="8" width="398" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k25-03-LkO">
+                                                <rect key="frame" x="21" y="49" width="373" height="174"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">My Swift iOS App aims to demonstrate the security of the text or messages using the Cryptographic Algorithm Advance Encryption Standards (AES), it converts Plain text to Cipher text. Using this app we can lock any Text with a key that can be sent securely anywhere, No one without your key can't read your particular message.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Features :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-dY-DgP">
+                                                <rect key="frame" x="21" y="714" width="360" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cipher text, Text Lock using Key, Encrypt text or message, Decrypt text, Custom Keyboard. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ1-5E-rif">
+                                                <rect key="frame" x="21" y="747" width="373" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZL-aa-oOV">
+                                                <rect key="frame" x="21" y="928" width="385" height="122"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">1. Navigate to Text-Lock.
+2. Type or Paste the plain text in the text field.
+3. Enter any 6-digit key for the Encryption. 
+4. Click Encrypt Text. 
+5. You will get the Cipher Text.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5G-lX-YT3">
+                                                <rect key="frame" x="21" y="1653" width="373" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbE-Ff-AH5">
+                                                <rect key="frame" x="21" y="1690" width="373" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">1. CryptoSwift
+2. CryptoKit</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Technology Used :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR7-i2-oSP">
+                                                <rect key="frame" x="21" y="1751" width="219" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SwiftUI, CryptoSwift, Custom Keyboard, Cocoa-pods, Package Manager." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-1p-7Y2">
+                                                <rect key="frame" x="21" y="1760" width="373" height="88"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="authpngimage" translatesAutoresizingMaskIntoConstraints="NO" id="lCS-UM-Ikp">
+                                                <rect key="frame" x="1" y="176" width="386" height="287"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feature Extraction :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7R-uk-Gd9">
+                                                <rect key="frame" x="21" y="483" width="172" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wad-N9-kON">
+                                                <rect key="frame" x="21" y="501" width="373" height="231"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Cipher text has been generated using AES Cryptographic Algorithm. AES Algorithm has been implemented using CryptoSwift a third-party library. The user would enter only a 6-digit key that would be converted according to the algorithm using Padding in the key. 
+For the complete version of this app, I am using Custom Keyboard, which would make this converting process easy and Fast.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For Encryption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srr-Zz-cdp">
+                                                <rect key="frame" x="21" y="894" width="360" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For Decryption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-Hn-cQZ">
+                                                <rect key="frame" x="21" y="1058" width="360" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAN-jj-Xz0">
+                                                <rect key="frame" x="21" y="1089" width="385" height="122"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">1. Navigate to Text-Lock.
+2. Type or Paste the Cipher text in the text field.
+3. Enter the correct 6-digit key for the Decryption.
+4. Click Decrypt Text. 
+5. You will get the Plain Text.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For Custom Keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kh-s8-P3V">
+                                                <rect key="frame" x="21" y="1219" width="360" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21M-H9-KqZ">
+                                                <rect key="frame" x="21" y="1257" width="385" height="388"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">1. Navigate to Text-Lock.
+2. Click Install Custom Keyboard.
+3. Open Settings -&gt; General -&gt; Keyboard -&gt; Keyboards -&gt; Add New Keyboard -&gt; Choose Text-Lock Keyboard.
+4. Open WhatsApp / Telegram / Instagram / Facebook or any messaging app where you want to write your text with keyboard.
+5. Change Keyboard by Clicking on the Earth Symbol on the Left-Bottom corner. 
+6. Type your Text and click on the Convert symbol ( new view will open in the keyboard section)
+7. Set your key 
+8. Click “Encrypt -&gt;” to Encrypt the text.
+9. Click “Decrypt -&gt;” to Decrypt the text.
+10. Encrypted or Decrypted Text would be in the keyboard TextField. 
+11. Click Send to send the message or Erase it.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SU8-Fm-N4k">
+                                                <rect key="frame" x="21" y="1834" width="106" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-4U-SCV">
+                                                <rect key="frame" x="21" y="1872" width="385" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">1.  krzyzanowskim/CryptoSwift
+2. https://developer.apple.com/documentation/cryptokit/aes
+Thank you for checking out my Swift Playground App!!!</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Working:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mm-FC-OqQ">
+                                                <rect key="frame" x="21" y="819" width="360" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Advantage / Need :-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4p-ef-sKj">
+                                                <rect key="frame" x="21" y="855" width="172" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Az-p4-8Zy">
+                                                <rect key="frame" x="211" y="858" width="132" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Click -&gt;"/>
+                                                <connections>
+                                                    <segue destination="CTd-ey-2gT" kind="show" id="mRU-OP-T5a"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2000" id="kuX-ZF-gWC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ipz-1v-KvX" secondAttribute="trailing" id="Znj-vC-jLI"/>
+                                    <constraint firstItem="ipz-1v-KvX" firstAttribute="leading" secondItem="yed-DA-wF3" secondAttribute="leading" id="fGL-NM-APM"/>
+                                    <constraint firstItem="ipz-1v-KvX" firstAttribute="top" secondItem="yed-DA-wF3" secondAttribute="top" id="peJ-n7-akw"/>
+                                    <constraint firstAttribute="bottom" secondItem="ipz-1v-KvX" secondAttribute="bottom" id="uQn-Ld-Ow8"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zxK-S6-POB"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yed-DA-wF3" firstAttribute="leading" secondItem="zxK-S6-POB" secondAttribute="leading" id="7Uv-kv-z2z"/>
+                            <constraint firstItem="yed-DA-wF3" firstAttribute="top" secondItem="s8m-Oq-8Us" secondAttribute="top" id="FKN-62-80n"/>
+                            <constraint firstItem="ipz-1v-KvX" firstAttribute="width" secondItem="s8m-Oq-8Us" secondAttribute="width" id="He7-gU-2og"/>
+                            <constraint firstItem="ipz-1v-KvX" firstAttribute="height" secondItem="s8m-Oq-8Us" secondAttribute="height" multiplier="2.23214" id="LmP-Ys-PSJ"/>
+                            <constraint firstAttribute="bottom" secondItem="yed-DA-wF3" secondAttribute="bottom" id="VUC-1k-awg"/>
+                            <constraint firstItem="yed-DA-wF3" firstAttribute="trailing" secondItem="zxK-S6-POB" secondAttribute="trailing" id="Xq9-lu-CSF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vfL-zk-WTe"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgf-T1-XXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5889.8550724637689" y="297.32142857142856"/>
+        </scene>
+        <!--Install Keyboard View Controller-->
+        <scene sceneID="PMP-7A-SiJ">
+            <objects>
+                <viewController id="svg-u3-yYM" customClass="InstallKeyboardViewController" customModule="cipherKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0w-rA-Zda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Install Cipher Keyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wZ-f3-qAB">
+                                <rect key="frame" x="20" y="88" width="327" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="XXK-MI-AQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <color key="textColor" red="0.32711397599999997" green="0.73934417519999995" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="customKeyboardImage" translatesAutoresizingMaskIntoConstraints="NO" id="XPb-I7-2lR">
+                                <rect key="frame" x="10" y="604" width="394" height="197"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keyboardPic" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-fY-TrC">
+                                <rect key="frame" x="-21" y="343" width="347" height="239"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wipPic" translatesAutoresizingMaskIntoConstraints="NO" id="eql-Gh-pmU">
+                                <rect key="frame" x="100" y="389" width="326" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="3lW-7e-bnd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-oy-Kod">
+                                <rect key="frame" x="21" y="152" width="373" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="W04-iG-T5Z"/>
+                                </constraints>
+                                <string key="text">The complete version of this app will consist of a Custom Keyboard, which would make this conversion process easier and fast, we can use it during Chatting to Lock sensitive text, or we can send sensitive data so that no third person can read your messages in both receiver side device and sender side device without the key.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cdT-rt-e0l"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6wZ-f3-qAB" firstAttribute="top" secondItem="cdT-rt-e0l" secondAttribute="top" constant="88" id="2dV-oT-r0M"/>
+                            <constraint firstItem="eoZ-oy-Kod" firstAttribute="trailing" secondItem="i0w-rA-Zda" secondAttribute="trailingMargin" id="Nun-Xk-lfY"/>
+                            <constraint firstItem="eql-Gh-pmU" firstAttribute="leading" secondItem="cdT-rt-e0l" secondAttribute="leading" constant="100" id="PbM-0C-KFn"/>
+                            <constraint firstItem="eoZ-oy-Kod" firstAttribute="top" secondItem="cdT-rt-e0l" secondAttribute="top" constant="152" id="QmT-SI-y6R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eql-Gh-pmU" secondAttribute="trailing" constant="-32" id="RKx-Pc-1lp"/>
+                            <constraint firstItem="XPb-I7-2lR" firstAttribute="leading" secondItem="cdT-rt-e0l" secondAttribute="leading" constant="10" id="TFA-Hq-oel"/>
+                            <constraint firstItem="cdT-rt-e0l" firstAttribute="trailing" secondItem="6wZ-f3-qAB" secondAttribute="trailing" constant="67" id="X3c-7d-zki"/>
+                            <constraint firstItem="eoZ-oy-Kod" firstAttribute="centerX" secondItem="XPb-I7-2lR" secondAttribute="centerX" id="dmV-Dd-muP"/>
+                            <constraint firstItem="6wZ-f3-qAB" firstAttribute="leading" secondItem="i0w-rA-Zda" secondAttribute="leadingMargin" id="eN6-Un-P2J"/>
+                            <constraint firstItem="cdT-rt-e0l" firstAttribute="trailing" secondItem="hSw-fY-TrC" secondAttribute="trailing" constant="88" id="ebz-t4-xUB"/>
+                            <constraint firstItem="XPb-I7-2lR" firstAttribute="top" secondItem="hSw-fY-TrC" secondAttribute="bottom" constant="22" id="gb6-5E-sE6"/>
+                            <constraint firstItem="hSw-fY-TrC" firstAttribute="top" secondItem="eoZ-oy-Kod" secondAttribute="bottom" constant="33" id="ht8-mu-HHM"/>
+                            <constraint firstItem="hSw-fY-TrC" firstAttribute="bottom" secondItem="eql-Gh-pmU" secondAttribute="bottom" id="iWR-ui-Ab0"/>
+                            <constraint firstItem="eoZ-oy-Kod" firstAttribute="centerX" secondItem="i0w-rA-Zda" secondAttribute="centerX" id="lrp-w9-V7V"/>
+                            <constraint firstItem="eql-Gh-pmU" firstAttribute="top" secondItem="eoZ-oy-Kod" secondAttribute="bottom" constant="79" id="nBZ-QB-QDe"/>
+                            <constraint firstItem="cdT-rt-e0l" firstAttribute="bottom" secondItem="XPb-I7-2lR" secondAttribute="bottom" constant="7" id="qna-Dv-AVZ"/>
+                            <constraint firstItem="hSw-fY-TrC" firstAttribute="leading" secondItem="i0w-rA-Zda" secondAttribute="leadingMargin" constant="-41" id="svn-is-WcR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z8b-rE-Dd5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFV-Ng-e47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5850.7246376811599" y="-413.16964285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KFc-74-io8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gVv-MR-C8d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="exF-XO-X54">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uas-S9-rAQ" kind="relationship" relationship="rootViewController" id="Ef8-zg-urt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5Z-50-bAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753.6231884057972" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ipo-xd-E9p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="04q-eE-Eh5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gMa-nb-7Ng">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qov-et-Fbp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNY-3J-SUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="69.642857142857139"/>
+        </scene>
+        <!--About Cipher Text View Controller-->
+        <scene sceneID="u7d-P8-9Xl">
+            <objects>
+                <viewController id="CTd-ey-2gT" customClass="AboutCipherTextViewController" customModule="cipherKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="ov8-LG-d3a">
+                        <rect key="frame" x="0.0" y="0.0" width="432" height="1081"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQZ-Ry-V7d">
+                                <rect key="frame" x="0.0" y="0.0" width="432" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7P-pc-mvR">
+                                        <rect key="frame" x="0.0" y="0.0" width="432" height="2000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8R-jl-xHs">
+                                                <rect key="frame" x="21" y="8" width="398" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" red="0.40784314269999999" green="0.80392158030000005" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNZ-xe-SB6">
+                                                <rect key="frame" x="21" y="46" width="373" height="154"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Sometimes we want to keep some sensitive information in our chat but we want no one should read this... but most of the time our phone is used by other family members or friends. and suppose you send a piece of sensitive information to your friend and your Friends's family member using his phone.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chatOne" translatesAutoresizingMaskIntoConstraints="NO" id="eqV-eU-vDm">
+                                                <rect key="frame" x="4" y="208" width="406" height="539"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chatTwo" translatesAutoresizingMaskIntoConstraints="NO" id="Zak-Gk-sw2">
+                                                <rect key="frame" x="2" y="775" width="406" height="539"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TextScreenshot" translatesAutoresizingMaskIntoConstraints="NO" id="Cga-qF-4W4">
+                                                <rect key="frame" x="2" y="1308" width="402" height="531"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlh-MB-zDH">
+                                                <rect key="frame" x="37" y="1847" width="367" height="109"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">For that situation, we can use Cipher-Text or Text-Lock, which can't be opened without its key. To make it more user-friendly, Easy, and Fast I'm creating a Custome Keyboard which can directly convert the text.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thanks!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Pm-8l-gMU">
+                                                <rect key="frame" x="37" y="1952" width="108" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <color key="textColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2000" id="YDC-TP-9Vg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d7P-pc-mvR" secondAttribute="trailing" id="Lh8-VF-vzP"/>
+                                    <constraint firstAttribute="bottom" secondItem="d7P-pc-mvR" secondAttribute="bottom" id="MPM-gS-baM"/>
+                                    <constraint firstItem="d7P-pc-mvR" firstAttribute="leading" secondItem="SQZ-Ry-V7d" secondAttribute="leading" id="eeu-Wk-ibT"/>
+                                    <constraint firstItem="d7P-pc-mvR" firstAttribute="top" secondItem="SQZ-Ry-V7d" secondAttribute="top" id="qjF-d0-Gcu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hor-w6-NqR"/>
+                        <color key="backgroundColor" red="0.1176470518" green="0.1176470518" blue="0.1176470518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="d7P-pc-mvR" firstAttribute="width" secondItem="ov8-LG-d3a" secondAttribute="width" id="0bg-FC-ief"/>
+                            <constraint firstItem="SQZ-Ry-V7d" firstAttribute="top" secondItem="ov8-LG-d3a" secondAttribute="top" id="MvD-Di-x1F"/>
+                            <constraint firstItem="SQZ-Ry-V7d" firstAttribute="leading" secondItem="hor-w6-NqR" secondAttribute="leading" id="SYz-2b-D5i"/>
+                            <constraint firstItem="SQZ-Ry-V7d" firstAttribute="trailing" secondItem="hor-w6-NqR" secondAttribute="trailing" id="bRN-1N-pxy"/>
+                            <constraint firstItem="d7P-pc-mvR" firstAttribute="height" secondItem="ov8-LG-d3a" secondAttribute="height" multiplier="2.23214" id="kbi-HG-wi4"/>
+                            <constraint firstAttribute="bottom" secondItem="SQZ-Ry-V7d" secondAttribute="bottom" id="wEs-M6-4FK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xhM-Pe-VNj"/>
+                    <size key="freeformSize" width="432" height="1135"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moP-Iu-TR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6826.0869565217399" y="340.51339285714283"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9O7-7y-ILJ"/>
+        <segue reference="L6M-ha-wtx"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="EncDecImage" width="602" height="352"/>
+        <image name="TextScreenshot" width="838" height="1614"/>
+        <image name="authpngimage" width="360" height="360"/>
+        <image name="chatOne" width="960" height="1761"/>
+        <image name="chatTwo" width="960" height="1786"/>
+        <image name="customKeyboardImage" width="480" height="261"/>
+        <image name="keyboardPic" width="534" height="502"/>
+        <image name="lockImage" width="730" height="472"/>
+        <image name="speaker.wave.2.fill" catalog="system" width="128" height="90"/>
+        <image name="wipPic" width="500" height="500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
